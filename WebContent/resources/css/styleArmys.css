@@ -1,0 +1,224 @@
+
+.army{
+	width: 14px;
+	height: 14px;
+	border: 1px solid #000;
+	/*margin: 0px 0px 0px 0px;*/
+	text-align: center;
+	padding: 8px;
+	border-radius: 100px;
+	/*cursor: pointer;*/
+	opacity: 1.0;
+}
+
+#army0{ /*Argentina*/
+	position: absolute;
+	top: 410px;
+	left: 185px;
+}
+#army1{ /*Brazil*/
+	position: absolute;
+	top: 345px;
+	left: 220px;
+}
+#army2{ /*Chile*/
+	position: absolute;
+	top: 360px;
+	left: 155px;
+}
+#army3{ /*Colombia*/
+	position: absolute;
+	top: 290px;
+	left: 160px;
+}
+#army4{ /*Africa do Sul*/
+	position: absolute;
+	top: 400px;
+	left: 430px;
+}
+#army5{ /*Madagascar*/
+	position: absolute;
+	top: 380px;
+	left: 505px;
+}
+#army6{ /*Congo*/
+	position: absolute;
+	top: 340px;
+	left: 425px;
+}
+#army7{ /*Argélia*/
+	position: absolute;
+	top: 265px;
+	left: 370px;
+}
+#army8{ /*Sudão*/
+	position: absolute;
+	top: 295px;
+	left: 468px;
+}
+#army9{ /*Egito*/
+	position: absolute;
+	top: 242px;
+	left: 435px;
+}
+#army10{ /*México*/
+	position: absolute;
+	top: 245px;
+	left: 90px;
+}
+#army11{ /*Nova York*/
+	position: absolute;
+	top: 205px;
+	left: 140px;
+}
+#army12{ /*Califórnia*/
+	position: absolute;
+	top: 175px;
+	left: 100px;
+}
+#army13{ /*Vancouver*/
+	position: absolute;
+	top: 142px;
+	left: 115px;
+}
+#army14{ /*Ottawa*/
+	position: absolute;
+	top: 153px;
+	left: 170px;
+}
+#army15{ /*Alaska*/
+	position: absolute;
+	top: 104px;
+	left: 82px;
+}
+#army16{ /*Mackenzie*/
+	position: absolute;
+	top: 113px;
+	left: 155px;
+}
+#army17{ /*Labrador*/
+	position: absolute;
+	top: 158px;
+	left: 220px;
+}
+#army18{ /*Groelandia*/
+	position: absolute;
+	top: 98px;
+	left: 306px;
+}
+#army19{ /*Inglaterra*/
+	position: absolute;
+	top: 166px;
+	left: 326px;
+}
+#army20{ /*Islandia*/
+	position: absolute;
+	top: 130px;
+	left: 345px;
+}
+#army21{ /*França*/
+	position: absolute;
+	top: 190px;
+	left: 370px;
+}
+#army22{ /*Alemanha*/
+	position: absolute;
+	top: 165px;
+	left: 396px;
+}
+#army23{ /*Polônia*/
+	position: absolute;
+	top: 190px;
+	left: 430px;
+}
+#army24{ /*Moscou*/
+	position: absolute;
+	top: 150px;
+	left: 475px;
+}
+
+#army25{ /*Suécia*/
+	position: absolute;
+	top: 115px;
+	left: 410px;
+}
+#army26{ /*Oriente Médio*/
+	position: absolute;
+	top: 238px;
+	left: 500px;
+}
+#army27{ /*Índia*/
+	position: absolute;
+	top: 255px;
+	left: 595px;
+}
+#army28{ /*Vietnã*/
+	position: absolute;
+	top: 275px;
+	left: 668px;
+}
+#army29{ /*Aral*/
+	position: absolute;
+	top: 190px;
+	left: 545px;
+}
+#army30{ /*China*/
+	position: absolute;
+	top: 215px;
+	left: 653px;
+}
+#army31{ /*Japão*/
+	position: absolute;
+	top: 192px;
+	left: 772px;
+}
+#army32{ /*OMSK*/
+	position: absolute;
+	top: 145px;
+	left: 535px;
+}
+#army33{ /*Mongólia*/
+	position: absolute;
+	top: 181px;
+	left: 640px;
+}
+#army34{ /*Dudinka*/
+	position: absolute;
+	top: 100px;
+	left: 560px;
+}
+#army35{ /*Tchita*/
+	position: absolute;
+	top: 154px;
+	left: 635px;
+}
+#army36{ /*Sibéria*/
+	position: absolute;
+	top: 114px;
+	left: 613px;
+}
+#army37{ /*Vladivostok*/
+	position: absolute;
+	top: 119px;
+	left: 700px;
+}
+#army38{ /*Austrália*/
+	position: absolute;
+	top: 420px;
+	left: 692px;
+}
+#army39{ /*Sumatra*/
+	position: absolute;
+	top: 340px;
+	left: 650px;
+}
+#army40{ /*Borneo*/
+	position: absolute;
+	top: 331px;
+	left: 704px;
+}
+#army41{ /*Nova Guiné*/
+	position: absolute;
+	top: 368px;
+	left: 762px;
+}

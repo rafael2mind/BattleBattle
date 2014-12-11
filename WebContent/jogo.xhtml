@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+	<title>Battle Battle</title>
+	<link rel="stylesheet" title="CSS" href="css/styleLayout.css" />
+	<link rel="stylesheet" title="CSS" href="css/styleObjetos.css" />
+	<link rel="stylesheet" title="CSS" href="css/styleArmys.css" />
+	
+	<a4j:loadStyle src="/resources/css/style.css"></a4j:loadStyle> 
+	
+	<h:outputScript name="jquery-1.11.0.min.js" library="js"/>
+	<h:outputScript name="script.js" library="js"/>
+	<h:outputScript name="scriptBonus.js" library="js"/>
+	<h:outputScript name="scriptConditionWinner.js" library="js"/>
+	<h:outputScript name="scriptTortapie.js" library="js"/>
+	<h:outputScript name="jss/scriptAnimation.js" library="js"/>
+	<h:outputScript name="jsapi" library="js"/>
+
+</h:head>
+<h:body>
+	<div id="container">
+
+		<div id="layoutMap">  <!--//Área de jogo, mapa territorios-->
+			<img  id="bground" src="img/WarMap.jpg" />
+
+			<div id="army0" class="army" title="Argentina" onclick="clique(0);"></div>
+			<div id="army1" class="army" title="Brazil" onclick="clique(1);"></div>
+			<div id="army2" class="army" title="Chile" onclick="clique(2);"></div>
+			<div id="army3" class="army" title="Colombia" onclick="clique(3);"></div>
+
+			<div id="army4" class="army" title="Africa do Sul" onclick="clique(4);"></div>
+			<div id="army5" class="army" title="Madagascar" onclick="clique(5);"></div>
+			<div id="army6" class="army" title="Congo" onclick="clique(6);"></div>
+			<div id="army7" class="army" title="Argélia" onclick="clique(7);"></div>
+			<div id="army8" class="army" title="Sudão" onclick="clique(8);"></div>		
+			<div id="army9" class="army" title="Egito" onclick="clique(9);"></div>
+
+			<div id="army10" class="army" title="México" onclick="clique(10);"></div>
+			<div id="army11" class="army" title="Nova York" onclick="clique(11);"></div>
+			<div id="army12" class="army" title="Califórnia" onclick="clique(12);"></div>
+			<div id="army13" class="army" title="Vancouver" onclick="clique(13);"></div>
+			<div id="army14" class="army" title="Ottawa" onclick="clique(14);"></div>
+			<div id="army15" class="army" title="Alaska" onclick="clique(15);"></div>
+			<div id="army16" class="army" title="Mackenzie" onclick="clique(16);"></div>
+			<div id="army17" class="army" title="Labrador" onclick="clique(17);"></div>
+			<div id="army18" class="army" title="Groelandia" onclick="clique(18);"></div>
+
+			<div id="army19" class="army" title="Inglaterra" onclick="clique(19);"></div>
+			<div id="army20" class="army" title="Islandia" onclick="clique(20);"></div>
+			<div id="army21" class="army" title="França" onclick="clique(21);"></div>	
+			<div id="army22" class="army" title="Alemanha" onclick="clique(22);"></div>
+			<div id="army23" class="army" title="Polônia" onclick="clique(23);"></div>
+			<div id="army24" class="army" title="Moscou" onclick="clique(24);"></div>
+			<div id="army25" class="army" title="Suécia" onclick="clique(25);"></div>
+
+			<div id="army26" class="army" title="Oriente Médio" onclick="clique(26);"></div>
+			<div id="army27" class="army" title="Índia" onclick="clique(27);"></div>
+			<div id="army28" class="army" title="Vietnã" onclick="clique(28);"></div>
+			<div id="army29" class="army" title="Aral" onclick="clique(29);"></div>
+			<div id="army30" class="army" title="China" onclick="clique(30);"></div>
+			<div id="army31" class="army" title="Japão" onclick="clique(31);"></div>
+			<div id="army32" class="army" title="OMSK" onclick="clique(32);"></div>
+			<div id="army33" class="army" title="Mongólia" onclick="clique(33);"></div>
+			<div id="army34" class="army" title="Dudinka" onclick="clique(34);"></div>
+			<div id="army35" class="army" title="Tchita" onclick="clique(35);"></div>
+			<div id="army36" class="army" title="Sibéria" onclick="clique(36);"></div>
+			<div id="army37" class="army" title="Vladivostok" onclick="clique(37);"></div>
+			
+			<div id="army38" class="army" title="Austrália" onclick="clique(38);"></div>
+			<div id="army39" class="army" title="Sumatra" onclick="clique(39);"></div>
+			<div id="army40" class="army" title="Borneo" onclick="clique(40);"></div>
+			<div id="army41" class="army" title="Nova Guiné" onclick="clique(41);"></div>
+
+		
+		</div> <!--//Área de jogo, mapa territorios-->
+
+		<div id="layoutStatus"> <!-- Area, canto direito --> 
+				<div id="status">
+					<h1>CONQUEST</h1>
+					<div id="listPlayer">
+						<h3></h3> <!--  Valores criados dinamicamente -->
+					</div>
+
+				</div>
+				<div id="tortapie">						
+						<!--Div q deve ficar o chart-->
+					<div id="chart_div"></div>
+															
+
+				</div>
+
+				<div id="phases">
+
+					<h3 id="showPlayer">Player: </h3>
+					<h3>Phase: <span id="showPhase">INITIALIZE</span></h3>
+					<input name="nextPhase" type="button" onClick= "changePhases();" value="Next Phase >>"></input>
+
+				</div>
+
+				<div id="cards">
+					<h1>CARDS</h1>
+						
+				</div>
+
+		</div> <!-- Area, canto direito --> 
+
+		<div id="layoutBattle"> <!-- Area, parte de baixo -->
+
+				<div id="bonusArmy">
+					<h1>Bonus Army</h1>
+					<div id="bonusBonus">
+						<h2 class="bonus" value="1">Your Army: <span id="armyYour">0</span></h2>
+						<h2 class="bonus" value="2">Upgrade: <span id="armyNextPhase1">0</span></h2>
+						<h2 class="bonus" value="3">Masterdom: <span id="armyContinente">0</span></h2>
+						<h2 class="bonus" value="4">Bonus Card: <span id="armyBonusCard">0</span></h2>
+					</div>
+					<div>
+						<div id="volume">
+							<output id="valueBar">0</output>
+							<input id="heightBar" type=range min=0 max=1 step=1 value=0/>
+							<div>		
+								<h3 id="cancel" onClick="loadingPage();">X</h3>
+								<h3 id="confirm">Confirm</h3>
+							</div>
+							<!-- <button type="cancel" onclick="">X</button> -->
+							
+						</div>
+					</div>
+				</div>
+
+				<div id="arena">
+					<h1>Battlefield</h1>
+
+					<div id="your">
+						<h2>YOUR</h2>
+						<div id="yourTerritory" class="battleTerritory">
+							<h3 id="b_country">BRAZIL</h3>
+							<h3 id="b_qntd">10</h3>
+						</div>
+					</div>
+			
+					<div id="attck">
+						<select id="qntdYourAttack"></select>			
+						<button id="btnAttack">Attack >></button>
+					</div>
+
+
+					<div id="enemy">
+						<h2>TARGET</h2>
+						<div id="targetTerritory" class="battleTerritory">
+							<h3 id="b_countryE">BRAZIL</h3>
+							<h3 id="b_qntdE">10</h3>
+						</div>
+					</div>
+				</div>
+
+				<div id="diceBattle">
+
+					<div id="diceDef">
+						<h1>DEF</h1>
+						<div id="die4" class="dice defense">0</div>
+						<div id="die5" class="dice defense">0</div>
+						<div id="die6" class="dice defense">0</div>
+					</div>
+					
+					<div id="diceAttck">
+						<h1>ATCK</h1>
+						<div id="die1" class="dice attack">0</div>
+						<div id="die2" class="dice attack">0</div>
+						<div id="die3" class="dice attack">0</div>
+					</div>
+
+				</div>
+
+		</div> <!-- Area, parte de baixo -->
+
+		<div id="layoutObjective"> <!-- area, parte baixo direita  -->
+				<h1>Objective</h1>
+				<iframe id="objective" src="" marginwidth="8"></iframe>
+				
+
+		</div> <!-- area, parte baixo direita  -->
+
+		<audio src="" id="sound" preload="auto"></audio>
+
+	</div>  <!-- fim container  -->
+				<div id="testa">
+					<input name="botao" type="button" onClick= "initialize();" value="botão">
+					</input>
+					<input name="choiceT" type="button" onClick= "choiceTerritory();" value="choiceTerritory();">
+					</input>
+					<input name="TESTE" type="button" onClick= "teste();" value="TESTE">
+					</input>
+				</div>
+
+
+	<script type="text/javascript">
+		reloadTerritory();
+		// tortaPie();
+    </script>
+
+	<!-- <img id="selectRandom" src="img/logo.jpg"/> -->
+	<div id="country">country</div>
+
+	<div id="pushDice">
+		<img id="diceAnimation" src="img/dice.png"/>
+		<input id="diceBar" type=range min=0 max=100 step=5 value="100"/>
+		<!-- <button>cancel</button> -->
+	</div>
+
+<h4></h4>
+
+</h:body>
+</html>

@@ -1,0 +1,246 @@
+h1{
+	font-size: 15px;
+	text-align: center;
+	margin: 0px 0px 10px 0px;
+}
+
+#diceBattle h1{
+	font-size: 12px;
+
+}
+
+#your >h2,#enemy >h2{
+	font-size: 14px;
+	margin: 0px auto 4px;
+	text-align: center;
+}
+
+#yourTerritory h3, #targetTerritory h3{
+	font-size: 13px;
+	margin: 10px auto 15px;
+}
+
+#valueBar{
+	margin-top: 0px;
+	margin-left: 15px;
+	float: left;
+}
+#heightBar{
+	float: right;
+	width: 80px;
+	margin-top: 0px;
+	margin-right: 18px;
+}
+
+#confirm{
+	float: left;
+	border: 1px solid black;
+	border-radius: 20px;
+	font-size: 12px;
+	text-align: center;
+	width: 70px;
+	height: 20px;
+	margin-top: 12px;
+	margin-left: 8px;
+}
+#cancel{
+	float: left;
+	border: 1px solid black;
+	border-radius: 20px;
+	margin-top: 12px;
+	margin-left: 8px;
+	width: 35px;
+	height: 20px;
+	font-size: 12px;
+	text-align: center;
+}
+
+.bonus{
+	font-size: 11px;
+	background-color: #CFCFCF;
+	border: 1px solid #000;
+	border-radius: 20px;
+	width: 97%;
+	text-align: center;
+
+	padding: 4px 0px;
+	margin:2px 0px;
+}
+
+#bonusBonus{
+	margin-top: 0px;
+	margin-left: 6px;
+	float: left;
+	width: 40%;
+	height: 80%;
+	/*border: 2px solid brown;*/
+}
+
+#volume{
+	border: 1px solid green;
+	margin-top: 22px;
+	margin-left: 0px;
+	float: left;
+	width: 53%;
+	height: 100%;
+	
+	opacity: 0.0;
+}
+
+#your,#enemy{
+	border: 2px solid pink;
+	float: left;
+	margin-top: 0px;
+	margin-left: 0px;
+	width: 29%;
+	height: 82%;
+}
+#yourTerritory,#targetTerritory{
+	border: 1px solid black;
+	text-align: center;
+	width: 100%; 
+	height: 75%;
+}
+#attck{
+	float: left;
+	border: 1px solid orange;
+	width: 35%;
+	height: 80%;	
+}
+#qntdYourAttack{
+	margin-top: 35px;
+	margin-left: 25px;
+	width: 65%;
+	height: 20%;
+	/*margin: 10px 15% 0px;*/
+}
+#btnAttack{
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-left: 40px;
+	width: 50%;
+	height: 20%;
+}
+
+#diceAttck,#diceDef{
+	float: right;
+	border: 1px solid black;
+	margin-top: 0px;
+	margin-left: 0px;
+	width: 45%;
+	height: 100%;
+	text-align: center;
+	font-size: 12px;
+}
+
+.dice{
+	width: 18px;
+	height: 15px;
+	background: #F5F5F5;
+	border: #999 1px solid;
+	padding: 5px;
+	font-size: 14px;
+	text-align: center;
+	margin: 5px 30% 5px;
+	opacity: 0.2;
+}
+
+#listPlayer h3{
+	font-size: 14px;
+	margin: 0px 0px 0px 0px;
+}
+
+#phases h3{
+	font-size: 15px;
+	padding: 0px 15px 0px;
+	margin: 8px 0px 0px 0px;
+	font-weight: lighter;
+}
+#phases input{
+	border-radius: 20px;
+	width: 89px;
+	height: 22px;
+	font-size: 11px;
+	margin-left: 90px;
+	margin-top: 0px;
+	/*margin: 0px 40% 0px;*/
+
+}
+
+#listPlayer{
+	border: 3px solid pink;
+	width: 98%; 
+	height: 35%;
+}
+
+#chart_div{
+	/*z-index: -1;*/
+	margin-top: -10px;
+	margin-left: -45px;
+	border: 1px dashed red;
+
+	width: 420px;
+	height: 200px;
+
+	position:absolute;
+	clip: rect(10px, 260px, 193px, 45px);
+	/*<!-- (topo, direita, inferior, esquerda) -->*/
+}
+
+iframe{
+	margin-top: 0px;
+	margin-left: 0px;
+	width: 98%;
+	height: 75%;
+	font-size: 18px;
+}
+
+#country{
+	font-style: "Comic Sans MS";
+	font-size: 22px;
+	text-align: center;
+	padding-top: 0%;
+	color: rgb(20,20,20);
+	position: absolute;
+	margin-top: 260px;
+	margin-left: 725px;
+	background-color: rgb(255,250,250);
+	border: 3px solid white;
+	border-radius: 20px;
+	width: 120px;
+	height: 30px;
+	opacity: 0.0;
+}
+
+#diceAnimation{
+	z-index: 2;
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	margin-top: 20px;
+	margin-left: 10px;
+	/*opacity: 0.0;*/
+}
+
+#pushDice{
+	z-index: 3;
+	position: absolute;
+	border: 3px solid red;
+	margin-top: 400px;
+	margin-left: 480px;
+	width: 160px;
+	height: 100px;
+	display: none;
+	/*opacity: 0.0;*/
+
+}
+
+#diceBar{
+	-webkit-appearance: slider-vertical;
+	width: 80px;
+	height: 80px;
+	height: 120px;
+	margin-left: 80px;
+	margin-top: -20px;
+	/*height: 20px;*/
+}
